@@ -1,0 +1,173 @@
+.popular-buyers-guides,
+.meet-the-experts,
+.catch-up-on-latest,
+.picture-yourself-at-ta,
+.team-members-say {
+
+    h2 {
+        padding-bottom: 24px;
+    }
+
+    > .wp-block-columns p {
+        padding-bottom: 16px;
+    }
+
+    .wp-block-query {
+        margin-block-start: 0;
+    }
+
+    .splide--carousel {
+        margin-block-start: 0;
+
+        .splide__track {
+            padding-bottom: 16px;
+
+            .splide__slide {
+                padding-right: 24px;
+
+                a.slide-container {
+                    display: block;
+                    overflow: hidden;
+                    height: 100%;
+                    position: relative;
+                    word-break: break-word;
+
+                    h3, h4 {
+                        margin-block-end: 0;
+                    }
+
+                    .wp-block-group.image-row {
+                        gap: 0;
+
+                        figure.wp-block-image {
+                            border-radius: 48px;
+                            background: var(--wp--preset--color--tacom-white);
+                            box-shadow: 2px 3px 20px 6px rgba(0, 0, 0, 0.15);
+                            padding: 18px;
+                            transition: left 0.20s linear; 
+                            position: relative;
+
+                            /* Loop through 5 figures */
+                            @for $i from 1 through 5 {
+                                &:nth-child(#{$i}) {
+                                    left: calc(-44px * (#{$i} - 1));
+                                    z-index: #{10 - $i};
+                                }
+                            }
+
+                            img {
+                                max-width: 48px;
+                                max-height: 48px;
+                            }
+                        }
+                    }
+
+                    &:hover, &:focus-within, &:focus {
+                        outline: none; //there is already an obvious focus/hover state
+                        background-color: var(--wp--preset--color--tacom-pale-green) !important;
+                        border-color: var(--wp--preset--color--primary) !important;
+
+                        .wp-block-group.image-row {
+                    
+                            figure.wp-block-image {
+                                /* Loop through 5 figures */
+                                @for $i from 1 through 5 {
+                                    &:nth-child(#{$i}) {
+                                        left: calc(-36px * (#{$i} - 1));
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                a.slide-container.has-hover-icon {
+                    &:hover, &:focus-within, &:focus {
+                        &:after {
+                            content: '';
+                            background-image: url('./assets/images/green-arrow-hover.svg');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            position: absolute;
+                            right: 30px;
+                            top: 40px;
+                            width: 48px;
+                            height: 48px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .buttons-row {
+        gap: 0;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    @media ( min-width: $tablet ) {
+
+        h2 {
+            padding-bottom: 32px;
+        }
+    
+        > .wp-block-columns p {
+            padding-bottom: 32px;
+        }
+
+        .buttons-row {
+            flex-direction: row;
+        }
+    }
+
+    @media ( min-width: $desktop ) {
+
+        .splide--carousel {
+
+            .splide__track {
+                padding-bottom: 32px;
+    
+                .splide__slide {
+        
+                    a.slide-container {
+        
+                        .wp-block-group.image-row {
+        
+                            figure.wp-block-image {
+
+                                /* Loop through 5 figures */
+                                @for $i from 1 through 5 {
+                                    &:nth-child(#{$i}) {
+                                        left: calc(-50px * (#{$i} - 1));
+                                        z-index: #{10 - $i};
+                                    }
+                                }
+    
+                                img {
+                                    max-width: 60px;
+                                    max-height: 60px;
+                                }
+                            }
+                        }
+
+                        &:hover, &:focus-within, &:focus {
+
+                            .wp-block-group.image-row {
+                        
+                                figure.wp-block-image {
+                                    /* Loop through 5 figures */
+                                    @for $i from 1 through 5 {
+                                        &:nth-child(#{$i}) {
+                                            left: calc(-42px * (#{$i} - 1));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ta-gazelle/testimonial-card",
+  "title": "Testimonial Card",
+  "category": "widgets",
+  "description": "Display customer testimonials with photo and company info",
+  "keywords": ["testimonial", "quote", "review"],
+  "attributes": {
+    "testimonialText": {
+      "type": "string",
+      "source": "html",
+      "selector": ".testimonial-text"
+    },
+    "authorName": {
+      "type": "string",
+      "source": "html",
+      "selector": ".author-name"
+    },
+    "authorTitle": {
+      "type": "string",
+      "source": "html",
+      "selector": ".author-title"
+    },
+    "authorImage": {
+      "type": "object",
+      "default": {
+        "url": "",
+        "alt": ""
+      }
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#f8f9fa"
+    }
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css"
+}

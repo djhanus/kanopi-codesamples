@@ -1,0 +1,84 @@
+<!-- wp:template-part {"slug":"header","theme":"technologyadvice-fawn","tagName":"header","className":"site-header"} /-->
+
+<!-- wp:group {"tagName":"main","align":"full","layout":{"inherit":true,"type":"constrained"}} -->
+<main class="wp-block-group alignfull"><!-- wp:group {"style":{"spacing":{"padding":{"top":"2rem","bottom":"2rem"}}},"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group" style="padding-top:2rem;padding-bottom:2rem"><!-- wp:yoast-seo/breadcrumbs {"className":"is-style-tacom-breadcrumb-light"} /-->
+
+  <!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"color":{"text":"#666666"}},"className":"archive-date"} -->
+  <p class="archive-date has-text-color" style="color:#666666;font-size:14px">Updated: <?php echo date('F j, Y'); ?></p>
+  <!-- /wp:paragraph -->
+  
+  <!-- wp:query-title {"type":"archive","showPrefix":false,"style":{"spacing":{"margin":{"top":"1rem"}}}} /--></div>
+  <!-- /wp:group -->
+  
+  <!-- wp:group {"style":{"spacing":{"padding":{"top":"2rem"}}},"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group" style="padding-top:2rem"><!-- wp:query {"queryId":32,"query":{"perPage":12,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"align":"full","layout":{"type":"constrained"}} -->
+  <div class="wp-block-query alignfull"><!-- wp:post-template {"style":{"spacing":{"blockGap":"24px"}},"layout":{"type":"grid","columnCount":3}} -->
+    <!-- wp:pattern {"slug":"ta-gazelle/post-vertical-expanded"} /-->
+    <!-- /wp:post-template -->
+  
+  <!-- wp:query-pagination {"paginationArrow":"arrow","showLabel":false} -->
+  <!-- wp:query-pagination-previous /-->
+  
+  <!-- wp:query-pagination-numbers {"midSize":0} /-->
+  
+  <!-- wp:query-pagination-next /-->
+  <!-- /wp:query-pagination -->
+  
+  <!-- wp:query-no-results -->
+  <!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results."} -->
+  <p></p>
+  <!-- /wp:paragraph -->
+  <!-- /wp:query-no-results --></div>
+  <!-- /wp:query --></div>
+  <!-- /wp:group -->
+  
+  <!-- wp:pattern {"slug":"categories-list"} /-->
+  <!-- wp:spacer {"height":"32px"} -->
+  <div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+  <!-- /wp:spacer -->
+  
+  <!-- wp:group {"metadata":{"name":"Newsletter: Banner Default","categories":["newsletter-layout"]},"className":"tacom-newsletter tacom-newsletter\u002d\u002dbanner","layout":{"type":"constrained"}} -->
+  <div class="wp-block-group tacom-newsletter tacom-newsletter--banner"><!-- wp:group {"style":{"border":{"width":"0px","style":"none","radius":"24px"},"color":{"background":"#141e2d"},"background":{"backgroundImage":{"url":"https://static.technologyadvice.com/uploads/newsletters/shapes.svg","id":32959,"source":"file","title":"container-2"}},"spacing":{"blockGap":"var:preset|spacing|40","padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"className":"overflow-hidden wrap-tablet","layout":{"type":"grid","columnCount":2}} -->
+  <div class="wp-block-group overflow-hidden wrap-tablet has-background" style="border-style:none;border-width:0px;border-radius:24px;background-color:#141e2d;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--50)"><!-- wp:group {"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|tacom-white"}}},"typography":{"fontStyle":"normal","fontWeight":"500"}},"textColor":"tacom-white"} -->
+  <p class="has-tacom-white-color has-text-color has-link-color" style="font-style:normal;font-weight:500">Join 250,000 Daily Tech Insider readers in getting the latest industry-leading tech news and top resources.</p>
+  <!-- /wp:paragraph --></div>
+  <!-- /wp:group -->
+  
+  <!-- wp:newsletters/cta {"newsletters":"daily-tech-insider","endpoint":"https://newsletters.technologyadvice.com"} -->
+  <form class="ta-newsletters__cta" data-newsletters="daily-tech-insider" data-endpoint="https://newsletters.technologyadvice.com"><!-- wp:group {"style":{"dimensions":{"minHeight":"0px"},"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+  <div class="wp-block-group" style="min-height:0px;margin-top:0;margin-bottom:0"><!-- wp:group {"className":"sign-up-wrapper","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+  <div class="wp-block-group sign-up-wrapper"><!-- wp:newsletters/email-input {"placeholder":"Email","style":{"border":{"radius":"100px"},"layout":{"selfStretch":"fill","flexSize":null},"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|30","right":"var:preset|spacing|40"}},"typography":{"lineHeight":"1.5"},"elements":{"link":{"color":{"text":"var:preset|color|primary-text"}}}},"textColor":"primary-text","fontSize":"medium"} -->
+  <input style="border-radius:100px;padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--30);line-height:1.5;--ta-newsletters__email-input__width:450px;--ta-newsletters__email-input__min-height:30px" class="ta-newsletters__email has-primary-text-color has-text-color has-link-color has-medium-font-size" type="email" placeholder="Email" data-field="email"/>
+  <!-- /wp:newsletters/email-input -->
+  
+  <!-- wp:newsletters/button {"style":{"layout":{"selfStretch":"fit","flexSize":null},"border":{"radius":"100px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"right":"0","left":"0"}}},"backgroundColor":"secondary"} -->
+  <div class="wp-block is-selected wp-block-button"><button class="ta-newsletters__button has-secondary-background-color has-background wp-block-button__link wp-element-button rich-text" style="border-radius:100px;margin-right:0;margin-left:0;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--40)">Sign Up</button></div>
+  <!-- /wp:newsletters/button --></div>
+  <!-- /wp:group -->
+  
+  <!-- wp:newsletters/validation-error -->
+  <span class="ta-newsletters__validation-error" data-field-validation="email"></span>
+  <!-- /wp:newsletters/validation-error -->
+  
+  <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+  <div class="wp-block-group"><!-- wp:newsletters/opt-in {"align":"left","fontSize":"small"} -->
+  <label style="--ta-newsletters__opt-in__display:flex;--ta-newsletters__opt-in__background:var(--wp--preset--color--primary)" class="ta-newsletters__opt-in alignleft has-small-font-size"><input type="checkbox" class="ta-newsletters__opt-in__input" data-field="opt-in"/><span class="ta-newsletters__opt-in__label">By checking this box you agree to our <a href="/terms-conditions">Terms of Use</a> and <a href="/privacy-policy/">Privacy Policy</a>.</span></label>
+  <!-- /wp:newsletters/opt-in -->
+  
+  <!-- wp:newsletters/validation-error {"field":"opt-in"} -->
+  <span class="ta-newsletters__validation-error" data-field-validation="opt-in"></span>
+  <!-- /wp:newsletters/validation-error --></div>
+  <!-- /wp:group --></div>
+  <!-- /wp:group --></form>
+  <!-- /wp:newsletters/cta --></div>
+  <!-- /wp:group -->
+  
+  <!-- wp:spacer {"height":"64px"} -->
+  <div style="height:64px" aria-hidden="true" class="wp-block-spacer"></div>
+  <!-- /wp:spacer --></div>
+  <!-- /wp:group --></main>
+  <!-- /wp:group -->
+  
+  <!-- wp:template-part {"slug":"footer","theme":"technologyadvice-fawn","tagName":"footer","className":"site-footer"} /-->
