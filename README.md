@@ -10,7 +10,7 @@ Pulled from a custom child theme I developed, these samples include FSE template
 
 <hr>
 
-- [Email](davidjhanus@gmail.com)
+- [Email](mailto:davidjhanus@gmail.com)
 - [Portfolio](https://davidjhanus.me)
 - [LinkedIn](https://www.linkedin.com/in/davidjhanus/)
 - [Github](https://github.com/djhanus/)
