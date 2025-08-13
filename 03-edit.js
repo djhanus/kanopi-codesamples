@@ -9,6 +9,16 @@ import {
   PanelBody, 
   Button 
 } from '@wordpress/components';
+import { __ } from '@wordpress/i18n';
+
+
+/**
+ * Save component for testimonial card block
+ * 
+ * @param {Object} props - Component props  
+ * @param {Object} props.attributes - Block attributes  
+ * @return {JSX.Element} Save component JSX
+ */
 
 // Custom testimonial card block for client testimonials
 export default function Edit({ attributes, setAttributes }) {
