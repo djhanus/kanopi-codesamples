@@ -1,0 +1,19 @@
+/**
+ * Styles for testimonial block, accessibility focus
+ */
+
+.wp-block-ta-gazelle-testimonial-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.wp-block-ta-gazelle-testimonial-card:focus-within {
+  outline: 2px solid #005cee;
+  outline-offset: 2px;
+}
+
+.wp-block-ta-gazelle-testimonial-card .author-image:focus {
+  outline: 2px solid #005cee;
+  outline-offset: 2px;
+}
