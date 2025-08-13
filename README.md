@@ -16,3 +16,5 @@ Pulled from a custom child theme I developed, these samples include FSE template
 - [Github](https://github.com/djhanus/)
 
 ✌️ 😎
+
+UPDATED: 2025.08.13
