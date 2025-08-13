@@ -1,3 +1,10 @@
+/**
+ * Component - Carousel Cards
+ * 
+ * Handles styling for carousel-based card layouts
+ * 
+ */
+ 
 .popular-buyers-guides,
 .meet-the-experts,
 .catch-up-on-latest,
@@ -36,6 +43,7 @@
                         margin-block-end: 0;
                     }
 
+                    /* Stacked image row */
                     .wp-block-group.image-row {
                         gap: 0;
 
@@ -62,6 +70,7 @@
                         }
                     }
 
+                    /* Hover and focus states with animation */
                     &:hover, &:focus-within, &:focus {
                         outline: none; //there is already an obvious focus/hover state
                         background-color: var(--wp--preset--color--tacom-pale-green) !important;
@@ -81,6 +90,7 @@
                     }
                 }
 
+                // Hover icon for clickable slides
                 a.slide-container.has-hover-icon {
                     &:hover, &:focus-within, &:focus {
                         &:after {
@@ -106,6 +116,7 @@
         align-items: start;
     }
 
+    // Tablet Responsive Styles
     @media ( min-width: $tablet ) {
 
         h2 {
@@ -121,6 +132,7 @@
         }
     }
 
+    // Desktop Responsive Styles
     @media ( min-width: $desktop ) {
 
         .splide--carousel {
