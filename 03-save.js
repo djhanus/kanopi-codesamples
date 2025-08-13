@@ -14,18 +14,21 @@ export default function save({ attributes }) {
   });
 
   return (
-    <div {...blockProps} className="testimonial-card">
+    <div {...blockProps} className="testimonial-card" role="region" aria-label={__('Customer testimonial', 'ta-gazelle')}>
       <RichText.Content
         tagName="blockquote"
         className="testimonial-text"
         value={attributes.testimonialText}
+        role="blockquote"
+        aria-label={__('Testimonial quote', 'ta-gazelle')}
       />
-      <div className="author-info">
+      <div className="author-info" role="group" aria-label={__('Author information', 'ta-gazelle')}>
         {attributes.authorImage?.url && (
           <img 
             src={attributes.authorImage.url} 
             alt={attributes.authorImage.alt || ''}
             className="author-image"
+            role="img"
           />
         )}
         <RichText.Content

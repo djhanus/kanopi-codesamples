@@ -42,16 +42,20 @@ export default function Edit({ attributes, setAttributes }) {
             onSelect={(media) => setAttributes({ 
               authorImage: { 
                 url: media.url, 
-                alt: media.alt 
+                alt: media.alt,
+                id: media.id
               }
             })}
             allowedTypes={['image']}
             render={({ open }) => (
-              <Button onClick={open} variant="secondary">
+              <Button onClick={open} variant="secondary" aria-describedby="author-image-helper">
                 {authorImage.url ? 'Change Image' : 'Select Image'}
               </Button>
             )}
           />
+          <p id="author-image-helper" className="screen-reader-text">
+            {__('Upload an image for the testimonial author', 'ta-gazelle')}
+          </p>
         </PanelBody>
         <PanelColorSettings
           title="Color Settings"
