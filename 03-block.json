@@ -6,6 +6,7 @@
   "category": "widgets",
   "description": "Display customer testimonials with photo and company info",
   "keywords": ["testimonial", "quote", "review"],
+  "textdomain": "ta-gazelle",
   "attributes": {
     "testimonialText": {
       "type": "string",
@@ -26,7 +27,8 @@
       "type": "object",
       "default": {
         "url": "",
-        "alt": ""
+        "alt": "",
+        "id": null
       }
     },
     "backgroundColor": {
@@ -39,6 +41,14 @@
     "spacing": {
       "padding": true,
       "margin": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
     }
   },
   "editorScript": "file:./index.js",
